@@ -42,5 +42,4 @@ my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.header("the fruit list contains:")
 streamlit.text(my_data_row)
-my_cur.execute("insert into FRUIT_LOAD_LIST
-values ('from steamlit')")
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('from steamlit')")
