@@ -1,4 +1,5 @@
 import streamlit
+import pandas
 
 streamlit.title('Hello StreamLit')
 streamlit.header('Welcome Lumen')
@@ -10,3 +11,7 @@ streamlit.text(' 🐔 Hard-Boiled Free-Range Egg')
 streamlit.text('🥑🍞 Avacado toast')
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+
+streamlit.dataframe(my_fruit_list)
+
+
