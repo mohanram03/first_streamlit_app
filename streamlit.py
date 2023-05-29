@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import requests
-import snowflake.connector
+
 
 streamlit.title('Hello StreamLit')
 streamlit.header('Welcome Lumen')
@@ -34,4 +34,5 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 streamlit.multiselect("pick some fruits :", list(my_fruit_list.index),['Avocado','Strawberries'])
 streamlit.dataframe(my_fruit_list)
 
+import snowflake.connector
 
